@@ -27,6 +27,8 @@ tar xvfz node_exporter-1.9.1.linux-amd64.tar.gz
 cd node_exporter-1.9.1.linux-amd64
 ./node_exporter
 ```
+<img src="Monitoring with Prometheus and Grafana/ss/Screenshot 2025-04-20 153915.png" width="600" alt="Monitoring Stack"/>
+```
 
 ✅ **Verify:**
 - Open browser: [http://localhost:9100/metrics](http://localhost:9100/metrics)
