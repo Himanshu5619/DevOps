@@ -3,7 +3,7 @@
 
 > A complete monitoring stack using **Node Exporter**, **Prometheus**, and **Grafana** to visualize system-level metrics from a Linux/WSL environment.
 
-![Monitoring Stack](https://user-images.githubusercontent.com/674621/125844438-19d29c60-6a0b-4c61-b993-d22879f97b47.png)
+
 
 ---
 
@@ -27,8 +27,12 @@ tar xvfz node_exporter-1.9.1.linux-amd64.tar.gz
 cd node_exporter-1.9.1.linux-amd64
 ./node_exporter
 ```
-<img src="Monitoring with Prometheus and Grafana/ss/Screenshot 2025-04-20 153915.png" width="600" alt="Monitoring Stack"/>
-```
+<p align="center">
+  <img src="https://github.com/Himanshu5619/DevOps/blob/main/Monitoring%20with%20Prometheus%20and%20Grafana/ss/Screenshot%202025-04-20%20153915.png" alt="Streamlit App Screenshot">
+</p>
+
+---
+
 
 ✅ **Verify:**
 - Open browser: [http://localhost:9100/metrics](http://localhost:9100/metrics)
@@ -37,11 +41,15 @@ cd node_exporter-1.9.1.linux-amd64
 curl http://localhost:9100/metrics | grep "node_"
 ```
 
+
 🔍 **Find WSL IP (for Prometheus):**
 ```bash
 hostname -I
 ```
 
+<p align="center">
+  <img src="https://github.com/Himanshu5619/DevOps/blob/main/Monitoring%20with%20Prometheus%20and%20Grafana/ss/Screenshot%202025-04-20%20160816.png" alt="Streamlit App Screenshot">
+</p>
 ---
 
 ## 🐳 Step 2: Start Prometheus & Grafana with Docker Compose
@@ -93,13 +101,29 @@ scrape_configs:
 ```bash
 docker-compose up -d
 ```
+<p align="center">
+  <img src="https://github.com/Himanshu5619/DevOps/blob/main/Monitoring%20with%20Prometheus%20and%20Grafana/ss/Screenshot%202025-04-20%20160840.png" alt="Streamlit App Screenshot">
+</p>
+---
 
 🌐 Access:
 - Prometheus: [http://localhost:9090](http://localhost:9090)
-- Grafana: [http://localhost:3000](http://localhost:3000)
-
+ ---
+<p align="center">
+<img src="https://github.com/Himanshu5619/DevOps/blob/main/Monitoring%20with%20Prometheus%20and%20Grafana/ss/Screenshot%202025-04-20%20161019.png" alt="Streamlit App Screenshot">
+</p>
 ---
-
+- Grafana: [http://localhost:3000](http://localhost:3000)
+---
+<p align="center">
+<img src="https://github.com/Himanshu5619/DevOps/blob/main/Monitoring%20with%20Prometheus%20and%20Grafana/ss/Screenshot%202025-04-20%20161008.png" alt="Streamlit App Screenshot">
+</p>
+---
+---
+<p align="center">
+<img src="https://github.com/Himanshu5619/DevOps/blob/main/Monitoring%20with%20Prometheus%20and%20Grafana/ss/Screenshot%202025-04-20%20161145.png" alt="Streamlit App Screenshot">
+</p>
+---
 ## 📊 Step 3: Configure Grafana Dashboard
 
 ### 1. 🧾 Login to Grafana
@@ -164,16 +188,3 @@ monitoring-stack/
 - 📈 [Node Exporter Dashboard #1860](https://grafana.com/grafana/dashboards/1860)
 
 ---
-
-## 🙌 Author
-
-👨‍💻 Made with ❤️ by [Your Name]
-
-> Feel free to fork, contribute, and ⭐ this repo!
-
----
-```
-
----
-
-### Want to include badges, GIFs, or light/dark mode support? I can add that too. Let me know and I’ll update it for you!
